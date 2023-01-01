@@ -60,8 +60,8 @@ impl Neg for Sign {
 
 /// A big signed integer type.
 pub struct BigInt {
-    sign: Sign,
-    data: BigUint,
+    pub sign: Sign,
+    pub data: BigUint,
 }
 
 // Note: derived `Clone` doesn't specialize `clone_from`,
