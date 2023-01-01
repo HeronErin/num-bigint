@@ -36,7 +36,7 @@ pub use self::iter::{U32Digits, U64Digits};
 
 /// A big unsigned integer type.
 pub struct BigUint {
-    data: Vec<BigDigit>,
+    pub data: Vec<BigDigit>,
 }
 
 // Note: derived `Clone` doesn't specialize `clone_from`,
